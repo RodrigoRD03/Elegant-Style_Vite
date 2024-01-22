@@ -1,0 +1,235 @@
+.app__home {
+  width: 70%;
+  height: 560px;
+  top: 60px;
+  background-color: var(--bg-100);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.app__home-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app__home-texts--slogan {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__home-texts--slogan h1{
+  font-family: var(--text-Carrete);
+  font-size: 8.209rem;
+  font-weight: 100;
+  color: var(--text-200);
+  align-self: flex-start;
+}
+
+.app__home-texts--slogan h1:nth-child(2) {
+  align-self: flex-end;
+}
+
+.app__home-img_small {
+  display: none;
+}
+
+.app__home-texts--scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  color: var(--text-200);
+  font-family: var(--text-Aldrich);
+}
+
+.app__home-texts--scroll div {
+  background-color: var(--accent-100);
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50vh;
+}
+
+.app__home-img {
+  width: 325px;
+  border-radius: 15px;
+  box-shadow: 0 1px 10px 0 rgba(255, 255, 255, 0.108);
+}
+
+@media screen and (max-width: 1400px) {
+  .app__home {
+    width: 100%;
+    padding: 0px 100px 0px 100px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .app__home {
+    width: 100%;
+    padding: 0px 60px 0px 60px;
+  }
+
+  .app__home-texts--slogan {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__home-texts--slogan h1 {
+    font-family: var(--text-Carrete);
+    font-size: 7.209rem;
+    font-weight: 100;
+    color: var(--text-200);
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .app__home {
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+  }
+
+  .app__home-texts {
+    height: 100%;
+    padding: 60px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .app__home-texts--slogan {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__home-texts--slogan h1 {
+    font-family: var(--text-Carrete);
+    font-size: 5.909rem;
+    font-weight: 100;
+    color: var(--text-200);
+    align-self: flex-start;
+  }
+
+  .app__home-texts--scroll {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+  }
+
+  .app__home-img {
+    width: 250px;
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .app__home {
+    height: max-content;
+  }
+  .app__home-texts {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+  }
+  .app__home-texts--slogan {
+    margin: auto;
+  }
+  .app__home-img_small {
+    display: flex;
+    width: 100%;
+    height: 250px;
+  }
+  .app__home-img_small img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .app__home-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .app__home {
+    width: 100%;
+    padding: 0px 60px 0px 60px;
+  }
+
+  .app__home-texts--slogan {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__home-texts--slogan h1 {
+    font-family: var(--text-Carrete);
+    font-size: 7.209rem;
+    font-weight: 100;
+    color: var(--text-200);
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .app__home {
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+  }
+
+  .app__home-texts {
+    height: 100%;
+    padding: 22px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .app__home-texts--slogan {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__home-texts--slogan h1 {
+    font-family: var(--text-Carrete);
+    font-size: 5.909rem;
+    font-weight: 100;
+    color: var(--text-200);
+    align-self: flex-start;
+  }
+
+  .app__home-texts--scroll {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+  }
+
+  .app__home-img {
+    width: 250px;
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app__home-texts--slogan {
+    width: 300px;
+  }
+  .app__home-texts--slogan h1 {
+    font-size: 3.909rem;
+  }
+}

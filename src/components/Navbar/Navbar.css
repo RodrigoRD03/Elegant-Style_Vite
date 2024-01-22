@@ -1,0 +1,186 @@
+.app__navbar {
+  position: fixed;
+
+  width: 100%;
+  padding: 20px;
+  height: 60px;
+  top: 0;
+
+  background-color: var(--bg-100);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Carattere", cursive;
+  font-size: 1.6rem;
+  color: var(--text-200);
+
+  border-bottom: 2px solid var(--bg-300);
+
+  z-index: 10;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.app__navbar-logo {
+  height: 40px;
+}
+
+.app__navbar-logo img {
+  height: 40px;
+}
+
+.app__navbar-redirections {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.app__navbar-redirections a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  color: var(--text-100);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.app__navbar-redirections a::after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  align-self: self-end;
+  width: 100%;
+  max-width: 0%;
+  height: 2px;
+  background-color: #fff;
+  animation: hoverLinks 0.5s ease;
+}
+
+.app__navbar-redirections a:hover::after {
+  max-width: 100%;
+  animation: hoverLinks 0.5s ease;
+}
+.app__navbar-redirections a:not(:hover)::after {
+  animation: notHoverLinks 0.5s ease;
+}
+
+.app__navbar-menu {
+  display: none;
+}
+
+.app__navbar-redirections_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app__navbar-redirections_menu a {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  color: var(--text-100);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.app__navbar-redirections_menu a::after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  align-self: self-end;
+  width: 100%;
+  max-width: 0%;
+  height: 2px;
+  background-color: #fff;
+  animation: hoverLinks 0.5s ease;
+}
+
+.app__navbar-redirections_menu a:hover::after {
+  max-width: 100%;
+  animation: hoverLinks 0.5s ease;
+}
+.app__navbar-redirections_menu a:not(:hover)::after {
+  animation: notHoverLinks 0.5s ease;
+}
+
+.app__navbar-logo_menu {
+  height: 40px;
+}
+
+.app__navbar-logo_menu img {
+  height: 40px;
+}
+
+.gpt3__navbar-menu_container {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background-color: var(--bg-200);
+
+  padding: 20px;
+
+  border: 1px solid var(--primary-100);
+  border-radius: 10px;
+}
+
+@keyframes hoverLinks {
+  from {
+    max-width: 0%;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+
+@keyframes notHoverLinks {
+  from {
+    max-width: 100%;
+  }
+  to {
+    max-width: 0%;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  .app__navbar-redirections {
+    display: none;
+  }
+  .app__navbar-menu {
+    display: flex;
+  }
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

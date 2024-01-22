@@ -1,0 +1,192 @@
+.app__Opinions {
+  width: 100%;
+  height: 620px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app__Opinions-title {
+  font-size: 1.3em;
+  font-family: var(--text-Carrete);
+}
+
+.app__Opinions-title h1 {
+  position: relative;
+  width: max-content;
+
+  font-size: 2.3em;
+  font-family: var(--text-Carrete);
+  color: var(--text-100);
+  z-index: 1;
+}
+
+.app__Opinions-title h1::after {
+  position: absolute;
+  content: "Opinions";
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  color: var(--primary-100);
+  animation: movingTitle 2.5s infinite ease-in-out;
+}
+
+.app__Opinions-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.app__Opinions-front {
+  display: flex;
+  gap: 20px;
+}
+
+.app__Opinions-front_img img {
+  max-width: 600px;
+  width: auto     ;
+}
+
+.app__Opinions-text {
+  max-width: 550px;
+
+  font-family: var(--text-Abel);
+  color: var(--text-100);
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 1.2em;
+}
+
+.app__Opinions-carrousel {
+  position: absolute;
+  height: 265px;
+
+  display: flex;
+  gap: 10px;
+  bottom: 0;
+  right: 0;
+}
+
+.app__Opinions-item {
+  width: 300px;
+  max-width: 300px; /* Hacer que los elementos se ajusten al ancho del contenedor */
+  height: 250px;
+  background-color: var(--primary-300);
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 2px solid var(--primary-100);
+  border-radius: 10px;
+
+  vertical-align: top;
+
+  font-family: var(--text-Abel);
+  text-align: justify;
+}
+
+.app__Opinions-item h1 {
+  height: 40px;
+  font-family: var(--text-Aldrich);
+  font-size: 5em;
+  color: var(--primary-100);
+  margin: 0;
+}
+
+.app__Opinions-item_person {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  overflow: hidden; /* Agrega overflow: hidden para que el contenido no se desborde del contenedor */
+}
+
+.app__Opinions-item_person img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+
+  border-radius: 50vh;
+}
+.app__Opinions-item_person p {
+  font-weight: bold;
+  white-space: nowrap; /* Evita que el texto se desborde */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1270px) {
+  .app__Opinions-item {
+    width: 220px;
+  }
+  .app__Opinions-item p {
+    font-size: .9em;
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .app__Opinions {
+    height: fit-content;
+  }
+  .app__Opinions-front {
+    width: 100%;
+  }
+  .app__Opinions-front_img {
+    width: 100%;
+  }
+  .app__Opinions-front_img img{
+    width: 100%;
+  }
+  .app__Opinions-front {
+    flex-direction: column-reverse;
+  }
+  .app__Opinions-text {
+    width: 45%;
+  }
+  .app__Opinions-carrousel {
+    top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .app__Opinions {
+    height: 1300px;
+  }
+  .app__Opinions-content {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .app__Opinions-text {
+    width: 100%;
+  }
+  .app__Opinions-carrousel {
+    margin: auto;
+    width: max-content;
+    position:relative;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app__Opinions-item {
+    width: 162px;
+    height: 350px;
+  }
+}

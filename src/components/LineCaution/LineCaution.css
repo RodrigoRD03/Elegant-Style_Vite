@@ -1,0 +1,27 @@
+.app__LineCaution {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--bg-300);
+
+  overflow: hidden;
+}
+
+.app__LineCaution-img {
+  height: 50px;
+  animation: movingText 7s infinite ease-in-out;
+}
+
+@keyframes movingText {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
