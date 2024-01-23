@@ -7,6 +7,7 @@ import Opinions from './Opinions/Opinions'
 import Contact from './Contact/Contact'
 import LineBuy from './LineBuy/LineBuy'
 import LineCaution from './LineCaution/LineCaution'
+import ChatBot from './ChatBot/ChatBot'
 
 export {
     Navbar,
@@ -17,5 +18,6 @@ export {
     Opinions,
     Contact,
     LineBuy,
-    LineCaution
+    LineCaution,
+    ChatBot
 }

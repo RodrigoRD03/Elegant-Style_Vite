@@ -1,10 +1,11 @@
-import { Navbar, Home, Catalogue, About, Gallery, Opinions, Contact, LineBuy, LineCaution } from "./components";
+import { Navbar, Home, Catalogue, About, Gallery, Opinions, Contact, LineBuy, LineCaution, ChatBot } from "./components";
 import "./App.css"
 
 const App = () => {
   return (
     <div>
       <Navbar />
+      <ChatBot />
       <Home />
       <LineBuy id="Catalogue"/>
       <Catalogue />
